@@ -1,0 +1,3 @@
+[submodule "TrabalhoWeb"]
+	path = TrabalhoWeb
+	url = https://github.com/NicoleFlaminio/TrabalhoWeb.git

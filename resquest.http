@@ -1,0 +1,48 @@
+### Criar UF
+POST http://localhost:3000/ufs
+Content-Type: application/json
+
+{
+  "nome": "Minas Gerais"
+}
+
+### Listar UFs
+GET http://localhost:3000/ufs
+
+### Criar Cidade
+POST http://localhost:3000/cidades
+Content-Type: application/json
+
+{
+  "nome": "Belo Horizonte",
+  "uf": 1
+}
+
+### Listar Cidades
+GET http://localhost:3000/cidades
+
+### Criar Estudante
+POST http://localhost:3000/estudantes
+Content-Type: application/json
+
+{
+  "nome": "João da Silva",
+  "cidade": 1
+}
+
+### Listar Estudantes
+GET http://localhost:3000/estudantes
+
+### Detalhar Estudante
+GET http://localhost:3000/estudantes/1
+
+### Atualizar Estudante
+PATCH http://localhost:3000/estudantes/1
+Content-Type: application/json
+
+{
+  "nome": "João Atualizado"
+}
+
+### Deletar Estudante
+DELETE http://localhost:3000/estudantes/1
